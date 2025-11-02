@@ -12,6 +12,15 @@ export const handler = async (event) => {
     const humidity = parseFloat(params.get('h'));
     const co2 = parseFloat(params.get('ppm'));
     
+    // Validate values - reject if any are NaN or invalid
+    if (isNaN(timestamp) || isNaN(temperature) || isNaN(humidity) || isNaN(co2)) {
+      console.error('Invalid data received:', { timestamp, temperature, humidity, co2 });
+      return {
+        statusCode: 400,
+        body: 'Invalid sensor data (NaN values)'
+      };
+    }
+    
     await client.send(new PutCommand({
       TableName: process.env.TABLE_NAME,
       Item: {

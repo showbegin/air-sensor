@@ -144,19 +144,29 @@ void v2(){
     }
   }
   data.time=now;
-  Serial.print(now);
+  
+  Serial.println("\n=== CURRENT READING ===");
+  Serial.print("Temp: "); Serial.print(data.t);
+  Serial.print("°C  Hum: "); Serial.print(data.h);
+  Serial.print("%  CO2: "); Serial.print(data.ppm);
+  Serial.println(" ppm");
+  Serial.print("Timestamp: "); Serial.println(now);
 
   File fileW = SD_MMC.open("/array.bin", FILE_APPEND);
   fileW.write((uint8_t*)&data, sizeof(data));
   fileW.close();
 
   if (connected) {
+    Serial.println("\n=== UPLOADING SAVED DATA ===");
     File fileR = SD_MMC.open("/array.bin", FILE_READ);
     File tempFile = SD_MMC.open("/temp.bin", FILE_WRITE);
     bool allSent = true;
+    int recordCount = 0;
     
     while (fileR.read((uint8_t*)&data, sizeof(data)) == sizeof(data)) {
+      recordCount++;
       if (allSent) {
+        Serial.print("Record #"); Serial.print(recordCount); Serial.print(": ");
         HTTPClient https;
         https.begin("https://co2.arsen.ganibek.com/ingest");
         https.addHeader("Content-Type", "application/x-www-form-urlencoded");
