@@ -1,0 +1,15 @@
+# SAM build artifacts
+sam-app/.aws-sam/
+sam-app/node_modules/
+sam-app/src/*/node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
