@@ -124,7 +124,7 @@ void v2(){
   data.h = dht.readHumidity();
   unsigned long startMillis = millis();
 
-  if (connected) {
+  if (connected) {  
     configTime(5 * 3600, 0, "pool.ntp.org");
     time_t seconds;
     time(&seconds);
@@ -144,6 +144,7 @@ void v2(){
     }
   }
   data.time=now;
+  Serial.print(now);
 
   File fileW = SD_MMC.open("/array.bin", FILE_APPEND);
   fileW.write((uint8_t*)&data, sizeof(data));
