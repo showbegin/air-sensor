@@ -165,6 +165,14 @@ void v2(){
     
     while (fileR.read((uint8_t*)&data, sizeof(data)) == sizeof(data)) {
       recordCount++;
+      
+      // Skip records with invalid timestamps (less than year 2020)
+      if (data.time < 1577836800000) {  // Jan 1, 2020 in milliseconds
+        Serial.print("Skipping record #"); Serial.print(recordCount);
+        Serial.println(" (invalid timestamp)");
+        continue;  // Don't send, don't save to temp
+      }
+      
       if (allSent) {
         Serial.print("Record #"); Serial.print(recordCount); Serial.print(": ");
         HTTPClient https;
@@ -232,6 +240,16 @@ void setup() {
   digitalWrite(pino2, LOW);
   dht.begin();
   delay(1000);
+  
+  // Clear SD card data if button held during boot
+  if (digitalRead(pini) == HIGH) {
+    Serial.println("Button pressed - clearing SD card data...");
+    SD_MMC.remove("/array.bin");
+    SD_MMC.remove("/temp.bin");
+    Serial.println("SD card cleared!");
+    delay(2000);
+  }
+  
   digitalWrite(pino, HIGH);
   if (esp_sleep_get_wakeup_cause() == ESP_SLEEP_WAKEUP_EXT0) {
     blesetup();
