@@ -5,12 +5,24 @@ const client = DynamoDBDocumentClient.from(new DynamoDBClient({}));
 
 export const handler = async (event) => {
   try {
-    const params = new URLSearchParams(event.body);
+    console.log('Raw event body:', event.body);
+    console.log('isBase64Encoded:', event.isBase64Encoded);
+    
+    // Decode base64 if needed
+    let body = event.body;
+    if (event.isBase64Encoded) {
+      body = Buffer.from(event.body, 'base64').toString('utf-8');
+      console.log('Decoded body:', body);
+    }
+    
+    const params = new URLSearchParams(body);
     
     const timestamp = parseInt(params.get('time'));
     const temperature = parseFloat(params.get('t'));
     const humidity = parseFloat(params.get('h'));
     const co2 = parseFloat(params.get('ppm'));
+    
+    console.log('Parsed values:', { timestamp, temperature, humidity, co2 });
     
     // Validate values - reject if any are NaN or invalid
     if (isNaN(timestamp) || isNaN(temperature) || isNaN(humidity) || isNaN(co2)) {
