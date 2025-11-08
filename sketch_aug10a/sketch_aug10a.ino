@@ -16,8 +16,6 @@
 #define wifi_id      "abcd1234-abcd-1234-abcd-1234567890ac"
 #define pass_id      "abcd1234-abcd-1234-abcd-1234567890ad"
 #define pini 19
-#define pino 21
-#define pino2 20
 #define DHTPIN 14
 #define DHTTYPE DHT22
 #define RX_PIN 10
@@ -60,7 +58,6 @@ void v1(){
       while (digitalRead(pini) == HIGH);
       delay(100);
       pAdvertising->stop();
-      digitalWrite(pino, LOW);
       Serial.println("advertising stopped");
       sleep();
     }
@@ -81,7 +78,7 @@ void sleep(){
   btStop();
   Serial.println("Going to sleep... press button to wake.");
   esp_sleep_enable_ext0_wakeup((gpio_num_t)pini, 1);
-  esp_sleep_enable_timer_wakeup(10 * 1000000ULL);
+  esp_sleep_enable_timer_wakeup(180 * 1000000ULL);
   esp_deep_sleep_start();
 }
 void connectToWiFi() {
@@ -122,10 +119,10 @@ void v2(){
   data.ppm = myMHZ19.getCO2();
   data.t = myMHZ19.getTemperature();
   data.h = dht.readHumidity();
-  unsigned long startMillis = millis();
 
   if (connected) {  
     configTime(5 * 3600, 0, "pool.ntp.org");
+    delay(4000);
     time_t seconds;
     time(&seconds);
     now = (uint64_t)seconds * 1000;
@@ -135,14 +132,13 @@ void v2(){
     uint64_t lastTime = prefs.getULong64("savedtime", 0);
     prefs.end();
     
-    // If never synced, use millis() as relative time
     if (lastTime == 0) {
       now = millis();
     } else {
-      // Add 10 seconds (sleep interval) to last saved time
-      now = lastTime + 10000;
+      now = lastTime + 180500 + millis();
     }
   }
+  unsigned long startMillis = millis();
   data.time=now;
   
   Serial.println("\n=== CURRENT READING ===");
@@ -166,11 +162,10 @@ void v2(){
     while (fileR.read((uint8_t*)&data, sizeof(data)) == sizeof(data)) {
       recordCount++;
       
-      // Skip records with invalid timestamps (less than year 2020)
-      if (data.time < 1577836800000) {  // Jan 1, 2020 in milliseconds
+      if (data.time < 1577836800000) { 
         Serial.print("Skipping record #"); Serial.print(recordCount);
         Serial.println(" (invalid timestamp)");
-        continue;  // Don't send, don't save to temp
+        continue; 
       }
       
       if (allSent) {
@@ -200,10 +195,8 @@ void v2(){
     SD_MMC.remove("/array.bin");
     SD_MMC.rename("/temp.bin", "/array.bin");
   }
-  
-  // Save current timestamp for next wake
   prefs.begin("time", false);
-  prefs.putULong64("savedtime", now);
+  prefs.putULong64("savedtime", now+millis()-startMillis);
   prefs.end();
   delay(500);
   sleep();
@@ -232,25 +225,19 @@ void setup() {
   myMHZ19.begin(mySerial);
   myMHZ19.autoCalibration(true);
   pinMode(pini, INPUT_PULLDOWN);
-  pinMode(pino, OUTPUT);
-  pinMode(pino2, OUTPUT);
   SD_MMC.setPins(SD_MMC_CLK, SD_MMC_CMD, SD_MMC_D0);
   SD_MMC.begin("/sdcard", true, true, SDMMC_FREQ_DEFAULT, 5);
-  digitalWrite(pino, LOW);
-  digitalWrite(pino2, LOW);
   dht.begin();
   delay(1000);
   
-  // Clear SD card data if button held during boot
-  if (digitalRead(pini) == HIGH) {
-    Serial.println("Button pressed - clearing SD card data...");
-    SD_MMC.remove("/array.bin");
-    SD_MMC.remove("/temp.bin");
-    Serial.println("SD card cleared!");
-    delay(2000);
-  }
+  // if (digitalRead(pini) == HIGH) {
+  //   Serial.println("Button pressed - clearing SD card data...");
+  //   SD_MMC.remove("/array.bin");
+  //   SD_MMC.remove("/temp.bin");
+  //   Serial.println("SD card cleared!");
+  //   delay(2000);
+  // }
   
-  digitalWrite(pino, HIGH);
   if (esp_sleep_get_wakeup_cause() == ESP_SLEEP_WAKEUP_EXT0) {
     blesetup();
     v1();
