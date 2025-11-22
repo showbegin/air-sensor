@@ -3,6 +3,10 @@ sam-app/.aws-sam/
 sam-app/node_modules/
 sam-app/src/*/node_modules/
 
+// amazonq
+.amazonq
+Amazonq.md
+
 # IDE
 .vscode/
 .idea/
