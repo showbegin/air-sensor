@@ -24,25 +24,31 @@ export const handler = async (event) => {
     
     console.log('Parsed values:', { timestamp, temperature, humidity, co2 });
     
-    // Validate values - reject if any are NaN or invalid
-    if (isNaN(timestamp) || isNaN(temperature) || isNaN(humidity) || isNaN(co2)) {
+    // Validate required values (humidity is optional)
+    if (isNaN(timestamp) || isNaN(temperature) || isNaN(co2)) {
       console.error('Invalid data received:', { timestamp, temperature, humidity, co2 });
       return {
         statusCode: 400,
-        body: 'Invalid sensor data (NaN values)'
+        body: 'Invalid sensor data'
       };
+    }
+    
+    const item = {
+      deviceId: 'esp32-001',
+      timestamp,
+      temperature,
+      co2,
+      ttl: Math.floor(Date.now() / 1000) + (365 * 86400)
+    };
+    
+    // Only add humidity if it's a valid number
+    if (!isNaN(humidity)) {
+      item.humidity = humidity;
     }
     
     await client.send(new PutCommand({
       TableName: process.env.TABLE_NAME,
-      Item: {
-        deviceId: 'esp32-001',
-        timestamp,
-        temperature,
-        humidity,
-        co2,
-        ttl: Math.floor(Date.now() / 1000) + (365 * 86400)
-      }
+      Item: item
     }));
     
     return {
