@@ -1,0 +1,200 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: CO2 Sensor IoT Backend
+
+Conditions:
+  HasCustomDomain: !Not [!Equals [!Ref CustomDomainName, ""]]
+
+Parameters:
+  CustomDomainName:
+    Type: String
+    Default: co2.arsen.ganibek.com
+    Description: Custom domain name for the API Gateway
+  
+  CertificateArn:
+    Type: String
+    Default: ""
+    Description: ARN of the certificate for co2.arsen.ganibek.com (regional)
+  
+  HostedZoneId:
+    Type: String
+    Default: Z067129335DF05SBL5SUG
+    Description: Route53 Hosted Zone ID for ganibek.com
+
+Globals:
+  Function:
+    Runtime: nodejs20.x
+    Timeout: 10
+    MemorySize: 256
+    Environment:
+      Variables:
+        TABLE_NAME: !Ref SensorDataTable
+
+Resources:
+  # DynamoDB Table
+  SensorDataTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: co2-sensor-data
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: deviceId
+          AttributeType: S
+        - AttributeName: timestamp
+          AttributeType: N
+      KeySchema:
+        - AttributeName: deviceId
+          KeyType: HASH
+        - AttributeName: timestamp
+          KeyType: RANGE
+      TimeToLiveSpecification:
+        Enabled: true
+        AttributeName: ttl
+
+  # Ingest Lambda (ESP32 -> DynamoDB)
+  IngestFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: src/ingest/
+      Handler: index.handler
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref SensorDataTable
+      Events:
+        IngestApi:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /ingest
+            Method: post
+
+  # Query Lambda (Dashboard -> DynamoDB)
+  QueryFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: src/query/
+      Handler: index.handler
+      Policies:
+        - DynamoDBReadPolicy:
+            TableName: !Ref SensorDataTable
+      Events:
+        QueryApi:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /data
+            Method: get
+
+  # Dashboard Lambda (Serve HTML from S3)
+  DashboardFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: src/dashboard/
+      Handler: index.handler
+      Policies:
+        - S3ReadPolicy:
+            BucketName: !Ref DashboardBucket
+      Environment:
+        Variables:
+          BUCKET_NAME: !Ref DashboardBucket
+      Events:
+        RootPath:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /
+            Method: get
+        FaviconPath:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /favicon.png
+            Method: get
+
+  # HTTP API Gateway
+  HttpApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      CorsConfiguration:
+        AllowOrigins:
+          - '*'
+        AllowMethods:
+          - GET
+          - POST
+        AllowHeaders:
+          - '*'
+
+  # Custom domain for API Gateway
+  ApiGatewayDomainName:
+    Type: AWS::ApiGatewayV2::DomainName
+    Condition: HasCustomDomain
+    Properties:
+      DomainName: !Ref CustomDomainName
+      DomainNameConfigurations:
+        - CertificateArn: !Ref CertificateArn
+          EndpointType: REGIONAL
+
+  # API Mapping
+  ApiMapping:
+    Type: AWS::ApiGatewayV2::ApiMapping
+    Condition: HasCustomDomain
+    Properties:
+      DomainName: !Ref CustomDomainName
+      ApiId: !Ref HttpApi
+      Stage: !Ref HttpApiApiGatewayDefaultStage
+    DependsOn:
+      - ApiGatewayDomainName
+
+  # Route53 Record
+  DnsRecord:
+    Type: AWS::Route53::RecordSet
+    Condition: HasCustomDomain
+    Properties:
+      HostedZoneId: !Ref HostedZoneId
+      Name: !Ref CustomDomainName
+      Type: A
+      AliasTarget:
+        HostedZoneId: !GetAtt ApiGatewayDomainName.RegionalHostedZoneId
+        DNSName: !GetAtt ApiGatewayDomainName.RegionalDomainName
+
+  # S3 Bucket for Dashboard
+  DashboardBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub 'co2-dashboard-${AWS::AccountId}'
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+
+
+Outputs:
+  IngestApiUrl:
+    Description: API Gateway endpoint for ESP32 data ingestion
+    Value: !If 
+      - HasCustomDomain
+      - !Sub 'https://${CustomDomainName}/ingest'
+      - !Sub 'https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com/ingest'
+  
+  QueryApiUrl:
+    Description: API Gateway endpoint for dashboard data queries
+    Value: !If 
+      - HasCustomDomain
+      - !Sub 'https://${CustomDomainName}/data'
+      - !Sub 'https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com/data'
+  
+  DashboardUrl:
+    Description: Dashboard URL (S3 website endpoint)
+    Value: !If 
+      - HasCustomDomain
+      - !Sub 'https://${CustomDomainName}/'
+      - !Sub 'https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com/'
+  
+  DashboardBucketName:
+    Description: S3 bucket for dashboard files
+    Value: !Ref DashboardBucket
+  
+  DynamoDBTableName:
+    Description: DynamoDB table name
+    Value: !Ref SensorDataTable

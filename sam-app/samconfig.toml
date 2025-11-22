@@ -1,0 +1,10 @@
+version = 0.1
+
+[default.deploy.parameters]
+stack_name = "co2-sensor-stack"
+region = "eu-central-1"
+profile = "personal"
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "CustomDomainName=co2.arsen.ganibek.com CertificateArn=arn:aws:acm:eu-central-1:602401188625:certificate/6de7f81e-65c4-4364-8724-8f70ce3573ab HostedZoneId=Z067129335DF05SBL5SUG"
+confirm_changeset = false
+resolve_s3 = true
