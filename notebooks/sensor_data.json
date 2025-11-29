@@ -3163,5 +3163,1373 @@
     "co2": 541.0,
     "temperature": 22.8,
     "timestamp": 1763817471000.0
+  },
+  {
+    "ttl": 1795460155.0,
+    "humidity": 39.4,
+    "deviceId": "esp32-001",
+    "co2": 737.0,
+    "temperature": 25.7,
+    "timestamp": 1763924154000.0
+  },
+  {
+    "ttl": 1795460171.0,
+    "humidity": 39.8,
+    "deviceId": "esp32-001",
+    "co2": 736.0,
+    "temperature": 25.6,
+    "timestamp": 1763924169000.0
+  },
+  {
+    "ttl": 1795460185.0,
+    "humidity": 39.7,
+    "deviceId": "esp32-001",
+    "co2": 743.0,
+    "temperature": 25.6,
+    "timestamp": 1763924184000.0
+  },
+  {
+    "ttl": 1795460205.0,
+    "humidity": 39.8,
+    "deviceId": "esp32-001",
+    "co2": 746.0,
+    "temperature": 25.6,
+    "timestamp": 1763924204000.0
+  },
+  {
+    "ttl": 1795460220.0,
+    "humidity": 39.8,
+    "deviceId": "esp32-001",
+    "co2": 743.0,
+    "temperature": 25.5,
+    "timestamp": 1763924218000.0
+  },
+  {
+    "ttl": 1795460234.0,
+    "humidity": 39.9,
+    "deviceId": "esp32-001",
+    "co2": 740.0,
+    "temperature": 25.5,
+    "timestamp": 1763924233000.0
+  },
+  {
+    "ttl": 1795460248.0,
+    "humidity": 39.7,
+    "deviceId": "esp32-001",
+    "co2": 738.0,
+    "temperature": 25.5,
+    "timestamp": 1763924247000.0
+  },
+  {
+    "ttl": 1795460265.0,
+    "humidity": 39.8,
+    "deviceId": "esp32-001",
+    "co2": 740.0,
+    "temperature": 25.5,
+    "timestamp": 1763924264000.0
+  },
+  {
+    "ttl": 1795460280.0,
+    "humidity": 39.9,
+    "deviceId": "esp32-001",
+    "co2": 743.0,
+    "temperature": 25.5,
+    "timestamp": 1763924279000.0
+  },
+  {
+    "ttl": 1795460295.0,
+    "humidity": 39.9,
+    "deviceId": "esp32-001",
+    "co2": 738.0,
+    "temperature": 25.5,
+    "timestamp": 1763924294000.0
+  },
+  {
+    "ttl": 1795460309.0,
+    "humidity": 39.8,
+    "deviceId": "esp32-001",
+    "co2": 716.0,
+    "temperature": 25.5,
+    "timestamp": 1763924309000.0
+  },
+  {
+    "ttl": 1795460323.0,
+    "humidity": 39.9,
+    "deviceId": "esp32-001",
+    "co2": 845.0,
+    "temperature": 25.5,
+    "timestamp": 1763924322000.0
+  },
+  {
+    "ttl": 1795460338.0,
+    "humidity": 39.8,
+    "deviceId": "esp32-001",
+    "co2": 747.0,
+    "temperature": 25.5,
+    "timestamp": 1763924337000.0
+  },
+  {
+    "ttl": 1795460370.0,
+    "humidity": 39.8,
+    "deviceId": "esp32-001",
+    "co2": 735.0,
+    "temperature": 25.5,
+    "timestamp": 1763924368000.0
+  },
+  {
+    "ttl": 1795460387.0,
+    "humidity": 39.8,
+    "deviceId": "esp32-001",
+    "co2": 733.0,
+    "temperature": 25.5,
+    "timestamp": 1763924386000.0
+  },
+  {
+    "ttl": 1795460401.0,
+    "humidity": 39.8,
+    "deviceId": "esp32-001",
+    "co2": 731.0,
+    "temperature": 25.5,
+    "timestamp": 1763924400000.0
+  },
+  {
+    "ttl": 1795460418.0,
+    "humidity": 39.8,
+    "deviceId": "esp32-001",
+    "co2": 733.0,
+    "temperature": 25.5,
+    "timestamp": 1763924417000.0
+  },
+  {
+    "ttl": 1795460433.0,
+    "humidity": 39.7,
+    "deviceId": "esp32-001",
+    "co2": 748.0,
+    "temperature": 25.6,
+    "timestamp": 1763924432000.0
+  },
+  {
+    "ttl": 1795460454.0,
+    "humidity": 39.6,
+    "deviceId": "esp32-001",
+    "co2": 744.0,
+    "temperature": 25.6,
+    "timestamp": 1763924453000.0
+  },
+  {
+    "ttl": 1795460471.0,
+    "humidity": 39.5,
+    "deviceId": "esp32-001",
+    "co2": 726.0,
+    "temperature": 25.7,
+    "timestamp": 1763924470000.0
+  },
+  {
+    "ttl": 1795460486.0,
+    "humidity": 39.3,
+    "deviceId": "esp32-001",
+    "co2": 732.0,
+    "temperature": 25.7,
+    "timestamp": 1763924485000.0
+  },
+  {
+    "ttl": 1795460500.0,
+    "humidity": 39.4,
+    "deviceId": "esp32-001",
+    "co2": 741.0,
+    "temperature": 25.7,
+    "timestamp": 1763924499000.0
+  },
+  {
+    "ttl": 1795460519.0,
+    "humidity": 39.3,
+    "deviceId": "esp32-001",
+    "co2": 739.0,
+    "temperature": 25.7,
+    "timestamp": 1763924518000.0
+  },
+  {
+    "ttl": 1795460369.0,
+    "humidity": 39.7,
+    "deviceId": "esp32-001",
+    "co2": 743.0,
+    "temperature": 25.5,
+    "timestamp": 1763924529984.0
+  },
+  {
+    "ttl": 1795460534.0,
+    "humidity": 39.4,
+    "deviceId": "esp32-001",
+    "co2": 735.0,
+    "temperature": 25.7,
+    "timestamp": 1763924533000.0
+  },
+  {
+    "ttl": 1795460550.0,
+    "humidity": 39.4,
+    "deviceId": "esp32-001",
+    "co2": 735.0,
+    "temperature": 25.7,
+    "timestamp": 1763924549000.0
+  },
+  {
+    "ttl": 1795460564.0,
+    "humidity": 39.5,
+    "deviceId": "esp32-001",
+    "co2": 720.0,
+    "temperature": 25.7,
+    "timestamp": 1763924563000.0
+  },
+  {
+    "ttl": 1795460593.0,
+    "humidity": 43.7,
+    "deviceId": "esp32-001",
+    "co2": 0.0,
+    "temperature": 25.7,
+    "timestamp": 1763924592000.0
+  },
+  {
+    "ttl": 1795460607.0,
+    "humidity": 44.2,
+    "deviceId": "esp32-001",
+    "co2": 564.0,
+    "temperature": 25.8,
+    "timestamp": 1763924606000.0
+  },
+  {
+    "ttl": 1795460621.0,
+    "humidity": 39.9,
+    "deviceId": "esp32-001",
+    "co2": 671.0,
+    "temperature": 25.9,
+    "timestamp": 1763924620000.0
+  },
+  {
+    "ttl": 1795460659.0,
+    "humidity": 40.8,
+    "deviceId": "esp32-001",
+    "co2": 0.0,
+    "temperature": 25.9,
+    "timestamp": 1763924658000.0
+  },
+  {
+    "ttl": 1795460672.0,
+    "humidity": 40.0,
+    "deviceId": "esp32-001",
+    "co2": 525.0,
+    "temperature": 25.9,
+    "timestamp": 1763924672000.0
+  },
+  {
+    "ttl": 1795460686.0,
+    "humidity": 39.4,
+    "deviceId": "esp32-001",
+    "co2": 676.0,
+    "temperature": 25.9,
+    "timestamp": 1763924685000.0
+  },
+  {
+    "ttl": 1795460700.0,
+    "humidity": 39.4,
+    "deviceId": "esp32-001",
+    "co2": 724.0,
+    "temperature": 25.9,
+    "timestamp": 1763924699000.0
+  },
+  {
+    "ttl": 1795460713.0,
+    "humidity": 39.3,
+    "deviceId": "esp32-001",
+    "co2": 740.0,
+    "temperature": 25.9,
+    "timestamp": 1763924713000.0
+  },
+  {
+    "ttl": 1795460727.0,
+    "humidity": 39.3,
+    "deviceId": "esp32-001",
+    "co2": 746.0,
+    "temperature": 25.9,
+    "timestamp": 1763924726000.0
+  },
+  {
+    "ttl": 1795461045.0,
+    "humidity": 40.0,
+    "deviceId": "esp32-001",
+    "co2": 709.0,
+    "temperature": 25.7,
+    "timestamp": 1763925045000.0
+  },
+  {
+    "ttl": 1795461234.0,
+    "humidity": 39.4,
+    "deviceId": "esp32-001",
+    "co2": 742.0,
+    "temperature": 26.0,
+    "timestamp": 1763925233000.0
+  },
+  {
+    "ttl": 1795533717.0,
+    "humidity": 44.5,
+    "deviceId": "esp32-001",
+    "co2": 1629.0,
+    "temperature": 25.1,
+    "timestamp": 1763925425836.0
+  },
+  {
+    "ttl": 1795533719.0,
+    "humidity": 45.7,
+    "deviceId": "esp32-001",
+    "co2": 1754.0,
+    "temperature": 25.0,
+    "timestamp": 1763925617593.0
+  },
+  {
+    "ttl": 1795533720.0,
+    "humidity": 44.4,
+    "deviceId": "esp32-001",
+    "co2": 1257.0,
+    "temperature": 25.2,
+    "timestamp": 1763925809347.0
+  },
+  {
+    "ttl": 1795533721.0,
+    "humidity": 43.7,
+    "deviceId": "esp32-001",
+    "co2": 1236.0,
+    "temperature": 25.0,
+    "timestamp": 1763926001101.0
+  },
+  {
+    "ttl": 1795533722.0,
+    "humidity": 43.7,
+    "deviceId": "esp32-001",
+    "co2": 1263.0,
+    "temperature": 24.9,
+    "timestamp": 1763926192860.0
+  },
+  {
+    "ttl": 1795533723.0,
+    "humidity": 43.6,
+    "deviceId": "esp32-001",
+    "co2": 1299.0,
+    "temperature": 24.9,
+    "timestamp": 1763926384615.0
+  },
+  {
+    "ttl": 1795533724.0,
+    "humidity": 43.6,
+    "deviceId": "esp32-001",
+    "co2": 1346.0,
+    "temperature": 24.9,
+    "timestamp": 1763926576367.0
+  },
+  {
+    "ttl": 1795533725.0,
+    "humidity": 43.7,
+    "deviceId": "esp32-001",
+    "co2": 1386.0,
+    "temperature": 24.9,
+    "timestamp": 1763926768121.0
+  },
+  {
+    "ttl": 1795533726.0,
+    "humidity": 43.7,
+    "deviceId": "esp32-001",
+    "co2": 1418.0,
+    "temperature": 24.9,
+    "timestamp": 1763926959873.0
+  },
+  {
+    "ttl": 1795533727.0,
+    "humidity": 43.6,
+    "deviceId": "esp32-001",
+    "co2": 1482.0,
+    "temperature": 24.9,
+    "timestamp": 1763927151635.0
+  },
+  {
+    "ttl": 1795533727.0,
+    "humidity": 43.5,
+    "deviceId": "esp32-001",
+    "co2": 1444.0,
+    "temperature": 25.0,
+    "timestamp": 1763927343386.0
+  },
+  {
+    "ttl": 1795533728.0,
+    "humidity": 43.6,
+    "deviceId": "esp32-001",
+    "co2": 1475.0,
+    "temperature": 25.0,
+    "timestamp": 1763927535141.0
+  },
+  {
+    "ttl": 1795533729.0,
+    "humidity": 43.7,
+    "deviceId": "esp32-001",
+    "co2": 1505.0,
+    "temperature": 25.0,
+    "timestamp": 1763927726896.0
+  },
+  {
+    "ttl": 1795533730.0,
+    "humidity": 43.8,
+    "deviceId": "esp32-001",
+    "co2": 1537.0,
+    "temperature": 25.1,
+    "timestamp": 1763927918652.0
+  },
+  {
+    "ttl": 1795533731.0,
+    "humidity": 43.8,
+    "deviceId": "esp32-001",
+    "co2": 1599.0,
+    "temperature": 25.1,
+    "timestamp": 1763928110405.0
+  },
+  {
+    "ttl": 1795533732.0,
+    "humidity": 44.1,
+    "deviceId": "esp32-001",
+    "co2": 1570.0,
+    "temperature": 25.2,
+    "timestamp": 1763928302160.0
+  },
+  {
+    "ttl": 1795533733.0,
+    "humidity": 44.1,
+    "deviceId": "esp32-001",
+    "co2": 1606.0,
+    "temperature": 25.2,
+    "timestamp": 1763928493914.0
+  },
+  {
+    "ttl": 1795533734.0,
+    "humidity": 44.3,
+    "deviceId": "esp32-001",
+    "co2": 1677.0,
+    "temperature": 25.3,
+    "timestamp": 1763928685667.0
+  },
+  {
+    "ttl": 1795533735.0,
+    "humidity": 44.8,
+    "deviceId": "esp32-001",
+    "co2": 1746.0,
+    "temperature": 25.3,
+    "timestamp": 1763928877425.0
+  },
+  {
+    "ttl": 1795533736.0,
+    "humidity": 45.1,
+    "deviceId": "esp32-001",
+    "co2": 1796.0,
+    "temperature": 25.3,
+    "timestamp": 1763929069183.0
+  },
+  {
+    "ttl": 1795533737.0,
+    "humidity": 45.4,
+    "deviceId": "esp32-001",
+    "co2": 1824.0,
+    "temperature": 25.4,
+    "timestamp": 1763929260936.0
+  },
+  {
+    "ttl": 1795533738.0,
+    "humidity": 45.5,
+    "deviceId": "esp32-001",
+    "co2": 1887.0,
+    "temperature": 25.4,
+    "timestamp": 1763929452689.0
+  },
+  {
+    "ttl": 1795533738.0,
+    "humidity": 45.8,
+    "deviceId": "esp32-001",
+    "co2": 1965.0,
+    "temperature": 25.4,
+    "timestamp": 1763929644446.0
+  },
+  {
+    "ttl": 1795533739.0,
+    "humidity": 46.3,
+    "deviceId": "esp32-001",
+    "co2": 2000.0,
+    "temperature": 25.4,
+    "timestamp": 1763929836198.0
+  },
+  {
+    "ttl": 1795533740.0,
+    "humidity": 46.4,
+    "deviceId": "esp32-001",
+    "co2": 2056.0,
+    "temperature": 25.5,
+    "timestamp": 1763930027949.0
+  },
+  {
+    "ttl": 1795533741.0,
+    "humidity": 46.4,
+    "deviceId": "esp32-001",
+    "co2": 2169.0,
+    "temperature": 25.6,
+    "timestamp": 1763930219702.0
+  },
+  {
+    "ttl": 1795533742.0,
+    "humidity": 46.9,
+    "deviceId": "esp32-001",
+    "co2": 2180.0,
+    "temperature": 25.6,
+    "timestamp": 1763930411455.0
+  },
+  {
+    "ttl": 1795533743.0,
+    "humidity": 47.0,
+    "deviceId": "esp32-001",
+    "co2": 2261.0,
+    "temperature": 25.6,
+    "timestamp": 1763930603208.0
+  },
+  {
+    "ttl": 1795533744.0,
+    "humidity": 47.4,
+    "deviceId": "esp32-001",
+    "co2": 2286.0,
+    "temperature": 25.7,
+    "timestamp": 1763930794960.0
+  },
+  {
+    "ttl": 1795533745.0,
+    "humidity": 47.8,
+    "deviceId": "esp32-001",
+    "co2": 2661.0,
+    "temperature": 25.7,
+    "timestamp": 1763930986712.0
+  },
+  {
+    "ttl": 1795533746.0,
+    "humidity": 48.5,
+    "deviceId": "esp32-001",
+    "co2": 2264.0,
+    "temperature": 25.8,
+    "timestamp": 1763931178465.0
+  },
+  {
+    "ttl": 1795533747.0,
+    "humidity": 47.8,
+    "deviceId": "esp32-001",
+    "co2": 2309.0,
+    "temperature": 25.8,
+    "timestamp": 1763931370216.0
+  },
+  {
+    "ttl": 1795533748.0,
+    "humidity": 48.4,
+    "deviceId": "esp32-001",
+    "co2": 2394.0,
+    "temperature": 25.7,
+    "timestamp": 1763931561970.0
+  },
+  {
+    "ttl": 1795533749.0,
+    "humidity": 48.5,
+    "deviceId": "esp32-001",
+    "co2": 2432.0,
+    "temperature": 25.7,
+    "timestamp": 1763931753722.0
+  },
+  {
+    "ttl": 1795533749.0,
+    "humidity": 48.8,
+    "deviceId": "esp32-001",
+    "co2": 2471.0,
+    "temperature": 25.7,
+    "timestamp": 1763931945474.0
+  },
+  {
+    "ttl": 1795533750.0,
+    "humidity": 49.6,
+    "deviceId": "esp32-001",
+    "co2": 2522.0,
+    "temperature": 25.7,
+    "timestamp": 1763932137230.0
+  },
+  {
+    "ttl": 1795533751.0,
+    "humidity": 49.5,
+    "deviceId": "esp32-001",
+    "co2": 2577.0,
+    "temperature": 25.8,
+    "timestamp": 1763932328983.0
+  },
+  {
+    "ttl": 1795533752.0,
+    "humidity": 49.9,
+    "deviceId": "esp32-001",
+    "co2": 2615.0,
+    "temperature": 25.8,
+    "timestamp": 1763932520736.0
+  },
+  {
+    "ttl": 1795533753.0,
+    "humidity": 50.0,
+    "deviceId": "esp32-001",
+    "co2": 2658.0,
+    "temperature": 25.8,
+    "timestamp": 1763932712492.0
+  },
+  {
+    "ttl": 1795533754.0,
+    "humidity": 50.4,
+    "deviceId": "esp32-001",
+    "co2": 2673.0,
+    "temperature": 25.8,
+    "timestamp": 1763932904244.0
+  },
+  {
+    "ttl": 1795533755.0,
+    "humidity": 50.3,
+    "deviceId": "esp32-001",
+    "co2": 2734.0,
+    "temperature": 25.8,
+    "timestamp": 1763933095996.0
+  },
+  {
+    "ttl": 1795533756.0,
+    "humidity": 50.5,
+    "deviceId": "esp32-001",
+    "co2": 2769.0,
+    "temperature": 25.9,
+    "timestamp": 1763933287752.0
+  },
+  {
+    "ttl": 1795533757.0,
+    "humidity": 50.8,
+    "deviceId": "esp32-001",
+    "co2": 2854.0,
+    "temperature": 25.9,
+    "timestamp": 1763933479505.0
+  },
+  {
+    "ttl": 1795533758.0,
+    "humidity": 51.8,
+    "deviceId": "esp32-001",
+    "co2": 2948.0,
+    "temperature": 25.9,
+    "timestamp": 1763933671273.0
+  },
+  {
+    "ttl": 1795533759.0,
+    "humidity": 52.4,
+    "deviceId": "esp32-001",
+    "co2": 2451.0,
+    "temperature": 26.1,
+    "timestamp": 1763933863027.0
+  },
+  {
+    "ttl": 1795533759.0,
+    "humidity": 48.6,
+    "deviceId": "esp32-001",
+    "co2": 1976.0,
+    "temperature": 26.1,
+    "timestamp": 1763934054780.0
+  },
+  {
+    "ttl": 1795533760.0,
+    "humidity": 46.9,
+    "deviceId": "esp32-001",
+    "co2": 1773.0,
+    "temperature": 26.0,
+    "timestamp": 1763934246532.0
+  },
+  {
+    "ttl": 1795533761.0,
+    "humidity": 45.9,
+    "deviceId": "esp32-001",
+    "co2": 1649.0,
+    "temperature": 25.9,
+    "timestamp": 1763934438286.0
+  },
+  {
+    "ttl": 1795533762.0,
+    "humidity": 45.5,
+    "deviceId": "esp32-001",
+    "co2": 1519.0,
+    "temperature": 25.8,
+    "timestamp": 1763934630041.0
+  },
+  {
+    "ttl": 1795533763.0,
+    "humidity": 45.2,
+    "deviceId": "esp32-001",
+    "co2": 1745.0,
+    "temperature": 25.7,
+    "timestamp": 1763934821795.0
+  },
+  {
+    "ttl": 1795533764.0,
+    "humidity": 47.3,
+    "deviceId": "esp32-001",
+    "co2": 1491.0,
+    "temperature": 25.9,
+    "timestamp": 1763935013553.0
+  },
+  {
+    "ttl": 1795533765.0,
+    "humidity": 44.6,
+    "deviceId": "esp32-001",
+    "co2": 1364.0,
+    "temperature": 25.9,
+    "timestamp": 1763935205307.0
+  },
+  {
+    "ttl": 1795533766.0,
+    "humidity": 44.1,
+    "deviceId": "esp32-001",
+    "co2": 1189.0,
+    "temperature": 25.8,
+    "timestamp": 1763935397061.0
+  },
+  {
+    "ttl": 1795533767.0,
+    "humidity": 43.1,
+    "deviceId": "esp32-001",
+    "co2": 1168.0,
+    "temperature": 25.7,
+    "timestamp": 1763935588815.0
+  },
+  {
+    "ttl": 1795533768.0,
+    "humidity": 43.0,
+    "deviceId": "esp32-001",
+    "co2": 1103.0,
+    "temperature": 25.6,
+    "timestamp": 1763935780569.0
+  },
+  {
+    "ttl": 1795533769.0,
+    "humidity": 42.9,
+    "deviceId": "esp32-001",
+    "co2": 1145.0,
+    "temperature": 25.6,
+    "timestamp": 1763935972323.0
+  },
+  {
+    "ttl": 1795533770.0,
+    "humidity": 43.5,
+    "deviceId": "esp32-001",
+    "co2": 1058.0,
+    "temperature": 25.6,
+    "timestamp": 1763936164077.0
+  },
+  {
+    "ttl": 1795533771.0,
+    "humidity": 42.7,
+    "deviceId": "esp32-001",
+    "co2": 965.0,
+    "temperature": 25.6,
+    "timestamp": 1763936355831.0
+  },
+  {
+    "ttl": 1795533772.0,
+    "humidity": 41.9,
+    "deviceId": "esp32-001",
+    "co2": 882.0,
+    "temperature": 25.4,
+    "timestamp": 1763936547590.0
+  },
+  {
+    "ttl": 1795533773.0,
+    "humidity": 41.6,
+    "deviceId": "esp32-001",
+    "co2": 813.0,
+    "temperature": 25.2,
+    "timestamp": 1763936739343.0
+  },
+  {
+    "ttl": 1795533774.0,
+    "humidity": 40.8,
+    "deviceId": "esp32-001",
+    "co2": 743.0,
+    "temperature": 25.1,
+    "timestamp": 1763936931101.0
+  },
+  {
+    "ttl": 1795533774.0,
+    "humidity": 40.6,
+    "deviceId": "esp32-001",
+    "co2": 736.0,
+    "temperature": 24.9,
+    "timestamp": 1763937122855.0
+  },
+  {
+    "ttl": 1795533775.0,
+    "humidity": 40.8,
+    "deviceId": "esp32-001",
+    "co2": 667.0,
+    "temperature": 24.8,
+    "timestamp": 1763937314612.0
+  },
+  {
+    "ttl": 1795533777.0,
+    "humidity": 40.1,
+    "deviceId": "esp32-001",
+    "co2": 615.0,
+    "temperature": 24.7,
+    "timestamp": 1763937506366.0
+  },
+  {
+    "ttl": 1795533777.0,
+    "humidity": 39.8,
+    "deviceId": "esp32-001",
+    "co2": 603.0,
+    "temperature": 24.5,
+    "timestamp": 1763937698119.0
+  },
+  {
+    "ttl": 1795533778.0,
+    "humidity": 39.9,
+    "deviceId": "esp32-001",
+    "co2": 633.0,
+    "temperature": 24.5,
+    "timestamp": 1763937889873.0
+  },
+  {
+    "ttl": 1795533779.0,
+    "humidity": 39.9,
+    "deviceId": "esp32-001",
+    "co2": 631.0,
+    "temperature": 24.5,
+    "timestamp": 1763938081626.0
+  },
+  {
+    "ttl": 1795533780.0,
+    "humidity": 39.9,
+    "deviceId": "esp32-001",
+    "co2": 640.0,
+    "temperature": 24.5,
+    "timestamp": 1763938273380.0
+  },
+  {
+    "ttl": 1795533781.0,
+    "humidity": 40.0,
+    "deviceId": "esp32-001",
+    "co2": 630.0,
+    "temperature": 24.4,
+    "timestamp": 1763938465138.0
+  },
+  {
+    "ttl": 1795533782.0,
+    "humidity": 39.9,
+    "deviceId": "esp32-001",
+    "co2": 623.0,
+    "temperature": 24.3,
+    "timestamp": 1763938656891.0
+  },
+  {
+    "ttl": 1795533783.0,
+    "humidity": 39.8,
+    "deviceId": "esp32-001",
+    "co2": 618.0,
+    "temperature": 24.3,
+    "timestamp": 1763938848646.0
+  },
+  {
+    "ttl": 1795533784.0,
+    "humidity": 39.7,
+    "deviceId": "esp32-001",
+    "co2": 590.0,
+    "temperature": 24.2,
+    "timestamp": 1763939040399.0
+  },
+  {
+    "ttl": 1795533785.0,
+    "humidity": 39.5,
+    "deviceId": "esp32-001",
+    "co2": 613.0,
+    "temperature": 24.1,
+    "timestamp": 1763939232154.0
+  },
+  {
+    "ttl": 1795533786.0,
+    "humidity": 39.6,
+    "deviceId": "esp32-001",
+    "co2": 633.0,
+    "temperature": 24.1,
+    "timestamp": 1763939423918.0
+  },
+  {
+    "ttl": 1795533787.0,
+    "humidity": 39.8,
+    "deviceId": "esp32-001",
+    "co2": 668.0,
+    "temperature": 24.3,
+    "timestamp": 1763939615675.0
+  },
+  {
+    "ttl": 1795533788.0,
+    "humidity": 40.1,
+    "deviceId": "esp32-001",
+    "co2": 732.0,
+    "temperature": 24.4,
+    "timestamp": 1763939807432.0
+  },
+  {
+    "ttl": 1795533789.0,
+    "humidity": 40.5,
+    "deviceId": "esp32-001",
+    "co2": 792.0,
+    "temperature": 24.5,
+    "timestamp": 1763939999188.0
+  },
+  {
+    "ttl": 1795533790.0,
+    "humidity": 40.8,
+    "deviceId": "esp32-001",
+    "co2": 896.0,
+    "temperature": 24.6,
+    "timestamp": 1763940190940.0
+  },
+  {
+    "ttl": 1795533791.0,
+    "humidity": 42.6,
+    "deviceId": "esp32-001",
+    "co2": 983.0,
+    "temperature": 24.7,
+    "timestamp": 1763940382695.0
+  },
+  {
+    "ttl": 1795533792.0,
+    "humidity": 42.7,
+    "deviceId": "esp32-001",
+    "co2": 1000.0,
+    "temperature": 24.8,
+    "timestamp": 1763940574449.0
+  },
+  {
+    "ttl": 1795533793.0,
+    "humidity": 42.9,
+    "deviceId": "esp32-001",
+    "co2": 1052.0,
+    "temperature": 24.9,
+    "timestamp": 1763940766203.0
+  },
+  {
+    "ttl": 1795533794.0,
+    "humidity": 43.3,
+    "deviceId": "esp32-001",
+    "co2": 1065.0,
+    "temperature": 24.9,
+    "timestamp": 1763940957958.0
+  },
+  {
+    "ttl": 1795533795.0,
+    "humidity": 43.5,
+    "deviceId": "esp32-001",
+    "co2": 1133.0,
+    "temperature": 25.0,
+    "timestamp": 1763941149713.0
+  },
+  {
+    "ttl": 1795533795.0,
+    "humidity": 43.9,
+    "deviceId": "esp32-001",
+    "co2": 1305.0,
+    "temperature": 25.0,
+    "timestamp": 1763941341472.0
+  },
+  {
+    "ttl": 1795533796.0,
+    "humidity": 45.6,
+    "deviceId": "esp32-001",
+    "co2": 1270.0,
+    "temperature": 25.1,
+    "timestamp": 1763941533230.0
+  },
+  {
+    "ttl": 1795533797.0,
+    "humidity": 44.6,
+    "deviceId": "esp32-001",
+    "co2": 1273.0,
+    "temperature": 25.1,
+    "timestamp": 1763941724986.0
+  },
+  {
+    "ttl": 1795533798.0,
+    "humidity": 44.6,
+    "deviceId": "esp32-001",
+    "co2": 1308.0,
+    "temperature": 25.1,
+    "timestamp": 1763941916745.0
+  },
+  {
+    "ttl": 1795533799.0,
+    "humidity": 44.9,
+    "deviceId": "esp32-001",
+    "co2": 1330.0,
+    "temperature": 25.2,
+    "timestamp": 1763942108496.0
+  },
+  {
+    "ttl": 1795533800.0,
+    "humidity": 44.7,
+    "deviceId": "esp32-001",
+    "co2": 1417.0,
+    "temperature": 25.2,
+    "timestamp": 1763942300248.0
+  },
+  {
+    "ttl": 1795533801.0,
+    "humidity": 45.1,
+    "deviceId": "esp32-001",
+    "co2": 1629.0,
+    "temperature": 25.3,
+    "timestamp": 1763942492001.0
+  },
+  {
+    "ttl": 1795533802.0,
+    "humidity": 45.5,
+    "deviceId": "esp32-001",
+    "co2": 2162.0,
+    "temperature": 25.3,
+    "timestamp": 1763942683755.0
+  },
+  {
+    "ttl": 1795533803.0,
+    "humidity": 46.3,
+    "deviceId": "esp32-001",
+    "co2": 2539.0,
+    "temperature": 25.6,
+    "timestamp": 1763942875517.0
+  },
+  {
+    "ttl": 1795533804.0,
+    "humidity": 45.7,
+    "deviceId": "esp32-001",
+    "co2": 3899.0,
+    "temperature": 25.6,
+    "timestamp": 1763943067275.0
+  },
+  {
+    "ttl": 1795533805.0,
+    "humidity": 45.7,
+    "deviceId": "esp32-001",
+    "co2": 4502.0,
+    "temperature": 25.6,
+    "timestamp": 1763943259027.0
+  },
+  {
+    "ttl": 1795533806.0,
+    "humidity": 45.5,
+    "deviceId": "esp32-001",
+    "co2": 5427.0,
+    "temperature": 25.6,
+    "timestamp": 1763943450778.0
+  },
+  {
+    "ttl": 1795533807.0,
+    "humidity": 45.8,
+    "deviceId": "esp32-001",
+    "co2": 9145.0,
+    "temperature": 25.6,
+    "timestamp": 1763943642529.0
+  },
+  {
+    "ttl": 1795533808.0,
+    "humidity": 45.8,
+    "deviceId": "esp32-001",
+    "co2": 10000.0,
+    "temperature": 25.6,
+    "timestamp": 1763943834282.0
+  },
+  {
+    "ttl": 1795533809.0,
+    "humidity": 46.0,
+    "deviceId": "esp32-001",
+    "co2": 10000.0,
+    "temperature": 25.6,
+    "timestamp": 1763944026035.0
+  },
+  {
+    "ttl": 1795533810.0,
+    "humidity": 46.0,
+    "deviceId": "esp32-001",
+    "co2": 10000.0,
+    "temperature": 25.6,
+    "timestamp": 1763944217787.0
+  },
+  {
+    "ttl": 1795533810.0,
+    "humidity": 43.6,
+    "deviceId": "esp32-001",
+    "co2": 674.0,
+    "temperature": 23.3,
+    "timestamp": 1763997716000.0
+  },
+  {
+    "ttl": 1795533998.0,
+    "humidity": 42.0,
+    "deviceId": "esp32-001",
+    "co2": 643.0,
+    "temperature": 23.5,
+    "timestamp": 1763997997000.0
+  },
+  {
+    "ttl": 1795534187.0,
+    "humidity": 42.0,
+    "deviceId": "esp32-001",
+    "co2": 647.0,
+    "temperature": 23.3,
+    "timestamp": 1763998185000.0
+  },
+  {
+    "ttl": 1795659708.0,
+    "humidity": 38.9,
+    "deviceId": "esp32-001",
+    "co2": 469.0,
+    "temperature": 23.3,
+    "timestamp": 1764123706000.0
+  },
+  {
+    "ttl": 1795745520.0,
+    "humidity": 39.1,
+    "deviceId": "esp32-001",
+    "co2": 579.0,
+    "temperature": 23.4,
+    "timestamp": 1764209518000.0
+  },
+  {
+    "ttl": 1795958596.0,
+    "humidity": 46.9,
+    "deviceId": "esp32-001",
+    "co2": 1297.0,
+    "temperature": 25.5,
+    "timestamp": 1764209711941.0
+  },
+  {
+    "ttl": 1795958598.0,
+    "humidity": 43.3,
+    "deviceId": "esp32-001",
+    "co2": 1286.0,
+    "temperature": 24.3,
+    "timestamp": 1764209903702.0
+  },
+  {
+    "ttl": 1795958598.0,
+    "humidity": 45.1,
+    "deviceId": "esp32-001",
+    "co2": 1322.0,
+    "temperature": 23.5,
+    "timestamp": 1764210095455.0
+  },
+  {
+    "ttl": 1795958599.0,
+    "humidity": 45.5,
+    "deviceId": "esp32-001",
+    "co2": 1365.0,
+    "temperature": 23.5,
+    "timestamp": 1764210287209.0
+  },
+  {
+    "ttl": 1795958600.0,
+    "humidity": 45.8,
+    "deviceId": "esp32-001",
+    "co2": 1418.0,
+    "temperature": 23.6,
+    "timestamp": 1764210478964.0
+  },
+  {
+    "ttl": 1795958601.0,
+    "humidity": 46.3,
+    "deviceId": "esp32-001",
+    "co2": 1495.0,
+    "temperature": 23.7,
+    "timestamp": 1764210670718.0
+  },
+  {
+    "ttl": 1795958602.0,
+    "humidity": 46.5,
+    "deviceId": "esp32-001",
+    "co2": 1544.0,
+    "temperature": 23.8,
+    "timestamp": 1764210862474.0
+  },
+  {
+    "ttl": 1795958603.0,
+    "humidity": 46.6,
+    "deviceId": "esp32-001",
+    "co2": 1592.0,
+    "temperature": 23.8,
+    "timestamp": 1764211054227.0
+  },
+  {
+    "ttl": 1795958604.0,
+    "humidity": 46.8,
+    "deviceId": "esp32-001",
+    "co2": 1598.0,
+    "temperature": 23.9,
+    "timestamp": 1764211245980.0
+  },
+  {
+    "ttl": 1795958604.0,
+    "humidity": 46.9,
+    "deviceId": "esp32-001",
+    "co2": 1647.0,
+    "temperature": 23.9,
+    "timestamp": 1764211437734.0
+  },
+  {
+    "ttl": 1795958605.0,
+    "humidity": 47.4,
+    "deviceId": "esp32-001",
+    "co2": 1692.0,
+    "temperature": 24.0,
+    "timestamp": 1764211629492.0
+  },
+  {
+    "ttl": 1795958606.0,
+    "humidity": 47.4,
+    "deviceId": "esp32-001",
+    "co2": 1739.0,
+    "temperature": 24.0,
+    "timestamp": 1764211821245.0
+  },
+  {
+    "ttl": 1795958607.0,
+    "humidity": 47.5,
+    "deviceId": "esp32-001",
+    "co2": 1749.0,
+    "temperature": 24.1,
+    "timestamp": 1764212012998.0
+  },
+  {
+    "ttl": 1795958608.0,
+    "humidity": 47.4,
+    "deviceId": "esp32-001",
+    "co2": 1784.0,
+    "temperature": 24.1,
+    "timestamp": 1764212204755.0
+  },
+  {
+    "ttl": 1795958609.0,
+    "humidity": 47.6,
+    "deviceId": "esp32-001",
+    "co2": 1784.0,
+    "temperature": 24.2,
+    "timestamp": 1764212396514.0
+  },
+  {
+    "ttl": 1795958610.0,
+    "humidity": 47.8,
+    "deviceId": "esp32-001",
+    "co2": 1791.0,
+    "temperature": 24.1,
+    "timestamp": 1764212588269.0
+  },
+  {
+    "ttl": 1795958611.0,
+    "humidity": 47.9,
+    "deviceId": "esp32-001",
+    "co2": 1776.0,
+    "temperature": 24.1,
+    "timestamp": 1764212780033.0
+  },
+  {
+    "ttl": 1795958612.0,
+    "humidity": 47.9,
+    "deviceId": "esp32-001",
+    "co2": 1841.0,
+    "temperature": 24.2,
+    "timestamp": 1764212971785.0
+  },
+  {
+    "ttl": 1795958613.0,
+    "humidity": 48.1,
+    "deviceId": "esp32-001",
+    "co2": 1920.0,
+    "temperature": 24.2,
+    "timestamp": 1764213163537.0
+  },
+  {
+    "ttl": 1795958614.0,
+    "humidity": 48.5,
+    "deviceId": "esp32-001",
+    "co2": 1948.0,
+    "temperature": 24.3,
+    "timestamp": 1764213355291.0
+  },
+  {
+    "ttl": 1795958615.0,
+    "humidity": 48.6,
+    "deviceId": "esp32-001",
+    "co2": 1966.0,
+    "temperature": 24.3,
+    "timestamp": 1764213547045.0
+  },
+  {
+    "ttl": 1795958615.0,
+    "humidity": 48.6,
+    "deviceId": "esp32-001",
+    "co2": 1991.0,
+    "temperature": 24.3,
+    "timestamp": 1764213738799.0
+  },
+  {
+    "ttl": 1795958616.0,
+    "humidity": 48.9,
+    "deviceId": "esp32-001",
+    "co2": 1988.0,
+    "temperature": 24.3,
+    "timestamp": 1764213930555.0
+  },
+  {
+    "ttl": 1795958617.0,
+    "humidity": 48.8,
+    "deviceId": "esp32-001",
+    "co2": 2014.0,
+    "temperature": 24.4,
+    "timestamp": 1764214122307.0
+  },
+  {
+    "ttl": 1795958618.0,
+    "humidity": 49.4,
+    "deviceId": "esp32-001",
+    "co2": 2058.0,
+    "temperature": 24.4,
+    "timestamp": 1764214314061.0
+  },
+  {
+    "ttl": 1795958619.0,
+    "humidity": 49.2,
+    "deviceId": "esp32-001",
+    "co2": 2102.0,
+    "temperature": 24.4,
+    "timestamp": 1764214505816.0
+  },
+  {
+    "ttl": 1795958619.0,
+    "humidity": 49.6,
+    "deviceId": "esp32-001",
+    "co2": 2130.0,
+    "temperature": 24.4,
+    "timestamp": 1764214697568.0
+  },
+  {
+    "ttl": 1795958620.0,
+    "humidity": 50.0,
+    "deviceId": "esp32-001",
+    "co2": 2201.0,
+    "temperature": 24.4,
+    "timestamp": 1764214889320.0
+  },
+  {
+    "ttl": 1795958810.0,
+    "humidity": 36.8,
+    "deviceId": "esp32-001",
+    "co2": 0.0,
+    "temperature": 22.4,
+    "timestamp": 1764422810000.0
   }
 ]
